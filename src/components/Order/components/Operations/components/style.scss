@@ -1,0 +1,13 @@
+@mixin flex {
+    display: flex;
+    
+}
+
+.colm-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colm-2 {
+    display: flex;
+}

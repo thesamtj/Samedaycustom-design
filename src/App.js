@@ -6,13 +6,13 @@ import MainDashboard from './components/Order/components/routes';
 
 
 const routes = [
-  { component: MainDashboard, exact: true, path: '/dashboard'},
+  { component: MainDashboard, path: '/dashboard'},
 ]
 
 const routeSwitcher = (
   routes.map(route => {
     const { component, exact, path } = route;
-    return <Route component={component} exact={exact} key={path} path={path}  />
+    return <Route component={component}  key={path} path={path}  />
   })
 )
 

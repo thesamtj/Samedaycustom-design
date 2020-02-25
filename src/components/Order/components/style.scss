@@ -1,0 +1,67 @@
+.ant-input-affix-wrapper .ant-input:not(:first-child) {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    width: 10px;
+    transition: width .5s ;
+} 
+
+.ant-input-affix-wrapper .ant-input:not(:first-child):hover {
+    width: 10rem;
+    border-bottom: 1;
+}
+
+.ant-menu-item .anticon, {
+
+}
+
+.ant-layout {
+    
+    .ant-layout-header {
+        display: flex;
+        justify-content: space-around;
+        background: #ffffff;
+        padding: 5px;
+
+        .ant-menu-horizontal {
+            border-bottom: 0;
+        }
+    }
+}
+
+.ant-layout-sider,
+.ant-menu-root.ant-menu-vertical,
+.ant-menu-root.ant-menu-vertical-left,
+.ant-menu-root.ant-menu-vertical-right,
+.ant-menu-root.ant-menu-inline,
+.ant-menu-sub.ant-menu-inline {
+    background: #007BFF;
+    color: #ffffff;;
+}
+
+.ant-menu-item > a {
+    color: #ffffff;
+}
+
+
+i.anticon.anticon-close.trigger {
+    margin-right: 10rem;
+}
+
+.anticon[tabindex] {
+    display: grid;
+    place-items: center;
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-kerning: auto;
+}
+
+.ant-menu-inline .ant-menu-item:nth-child(7) {
+    position: absolute;
+    bottom: 1rem;
+}
+.ant-menu-vertical .ant-menu-item:nth-child(7) {
+    position: absolute;
+    bottom: 1rem;
+}

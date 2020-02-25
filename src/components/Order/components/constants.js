@@ -1,38 +1,44 @@
 const DASHBOARD_MENU_STRING = [
     {
-        icon: '',
+        icon: 'appstore',
         menuKey: 'dashboard',
         menuText: 'Dashboard',
         menuUrl: ''
     },
     {
-        icon: '',
+        icon: 'history',
         menuKey: 'operations',
         menuText: 'Operations',
     },
     {
-        icon: '',
+        icon: 'file-text',
         menuKey: 'records',
         menuText: 'Records',
         menuUrl: 'records'
     },
     {
-        icon: '',
+        icon: 'shopping-cart',
         menuKey: 'supply',
         menuText: 'Supply Store',
         menuUrl: 'supply'
     },
     {
-        icon: '',
+        icon: 'gold',
         menuKey: 'market',
         menuText: 'Market Place',
         menuUrl: 'market'
     },
     {
-        icon: '',
+        icon: 'wechat',
         menuKey: 'forums',
         menuText: 'Forums',
         menuUrl: 'forums'
+    },
+    {
+        icon: 'setting',
+        menuKey: 'settings',
+        menuText: 'Settings',
+        menuUrl: 'settings'
     },
 ];
 
@@ -64,7 +70,14 @@ const SUB_MENU_STRING = [
     },
 ]
 
+const PAGINATION_CONFIG = {
+    hideOnSinglePage: true,
+    pageSize: 5,
+    size: 'small'
+}
+
 export { 
     DASHBOARD_MENU_STRING,
+    PAGINATION_CONFIG,
     SUB_MENU_STRING
 };

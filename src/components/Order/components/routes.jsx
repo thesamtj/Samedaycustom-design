@@ -6,15 +6,14 @@ import Records from './Records';
 import MainContainer from './MainContainer';
 import ProductionHouse from './Operations/components/ProductionHouse';
 import ProductionDetails from './Operations/components/ProductionDetails';
-import Operations from './Operations/components'
+
 
 const routes = [
     { component: Dashboard, exact: true, url: '' },
     { component: Orders,  url: '/orders' },
     { component: Records, url: '/records' },
-    { component: ProductionHouse, url: '/production' },
-    { component: ProductionDetails, url: '/details' },
-    // { component: Operations, exact: true, url: 'Operations' },
+    { component: ProductionHouse,exact: true, url: '/production' },
+    { component: ProductionDetails, url: '/production/details' },
 ]
 
 const routeSwitch = path =>( 

@@ -15,7 +15,7 @@ const dropDownMenu = () => (
       Me
     </Menu.Item>
     <Menu.Item>
-      <Link to="#/">Profile</Link>
+      <Link to="/#">Profile</Link>
     </Menu.Item>
   </Menu>
 )

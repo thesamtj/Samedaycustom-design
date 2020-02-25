@@ -12,7 +12,7 @@ import {
 } from "antd";
 import { PAGINATION_CONFIG } from "../../constants";
 import "./style.scss";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useRouteMatch } from "react-router-dom";
 
 const dropDownMenu = () => (
   <Menu>
@@ -147,10 +147,12 @@ const operations = (
 
 const ProductionHouse = () => {
   const history = useHistory();
+  const { path } = useRouteMatch();
+  console.log(path)
   const handleRowClick = record => {
     console.log( record.key , 'row clicked')
-    // return <Link to={'production/' + record.order} />
-    history.push('dashboard/details')
+    // return <Link to={path} />
+    history.push(`${path}/details`)
   }
   return (
     <div>

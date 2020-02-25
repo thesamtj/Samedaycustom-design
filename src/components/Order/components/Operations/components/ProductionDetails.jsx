@@ -227,7 +227,7 @@ const ProductionDetails = () => {
   return (
     <>
       <div>
-        <Link>
+        <Link to="/dashboard/production">
           <Icon type="arrow-left" />
           <span>Back |</span>
         </Link>

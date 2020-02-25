@@ -75,7 +75,11 @@ const MainContainer = ({ children }) => {
       <Layout>
         <Header className="nav--header">
           <div>
-            <img style={{width: '150px'}} src={Logo} alt="logo"/>
+            <img 
+            alt="logo"
+            style={{width: '150px', position: 'absolute', left: '16rem'}}
+            src={Logo}
+            />
           </div>
           <Menu
             mode="horizontal"

@@ -10,24 +10,24 @@ const { TabPane } = Tabs;
 
 const imgUrl = [
   {
+    key: Img1,
     url: Img1,
-    key: 1
   },
 
   {
+    key: Img2,
     url: Img2,
-    key: 2
   },
 
   {
+    key: Img3,
     url: Img3,
-    key: 3
   },
 
-  {
-    ur1: Img4,
-    key: 4
-  }
+  // {
+  //   key: Img4,
+  //   ur1: Img4,
+  // }
 ];
 const columns = [
   {

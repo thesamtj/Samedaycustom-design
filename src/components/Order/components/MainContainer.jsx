@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 import { Avatar, Dropdown, Layout, Menu, Icon, Input } from "antd";
 import { DASHBOARD_MENU_STRING, SUB_MENU_STRING } from "./constants";
-// import { logoSvg } from './logo';
+import Logo from '../../../assets/images/logo.svg';
 import './style.scss';
 
 const { Header, Sider, Content } = Layout;
@@ -20,7 +20,6 @@ const dropDownMenu = () => (
   </Menu>
 )
 const MainContainer = ({ children }) => {
-  // const logoIcon = () => <Icon component={logoSvg} />;
 
   const { path } = useRouteMatch();
   console.log(path);
@@ -76,12 +75,9 @@ const MainContainer = ({ children }) => {
       <Layout>
         <Header className="nav--header">
           <div>
-            {/* {logoIcon()} */}
-            <h1>LOGO</h1>
+            <img style={{width: '150px'}} src={Logo} alt="logo"/>
           </div>
           <Menu
-            //   onClick={this.handleClick}
-            //   selectedKeys={[this.state.current]}
             mode="horizontal"
           >
             <Menu.Item key="search">
